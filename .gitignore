@@ -1,0 +1,13 @@
+# ejecutable
+push_swap
+
+# objetos
+*.o
+
+# temporales
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
