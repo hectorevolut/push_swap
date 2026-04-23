@@ -2,5 +2,5 @@
 
 void	print_error(void)
 {
-	write(2, "Error\n", 6);
+	write(2, "Error\n", ft_strlen("Error\n"));
 }

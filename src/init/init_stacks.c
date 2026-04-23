@@ -7,7 +7,17 @@ int	init_stacks(t_ps *ps, int capacity)
 	return (1);
 }
 
-void	free_stacks(t_ps *ps)
+void free_stacks(t_ps *ps)
 {
-	(void)ps;
+    if (!ps)
+        return;
+    if (ps->a)
+        free(ps->a);
+    if (ps->b)
+        free(ps->b);
+    ps->a = NULL;
+    ps->b = NULL;
+    ps->size_a = 0;
+    ps->size_b = 0;
+    ps->capacity = 0;
 }
