@@ -4,6 +4,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <limits.h>
+# include "libft.h"
 
 typedef struct s_ps
 {
