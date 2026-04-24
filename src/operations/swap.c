@@ -1,3 +1,5 @@
+# include "push_swap.h"
+
 static void	swap_values(int *x, int *y)
 {
 	int	temp;
