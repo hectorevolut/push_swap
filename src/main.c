@@ -20,8 +20,6 @@ int	main(int argc, char **argv)
 		return (0);
 	if (!parse_args(&ps, argc, argv))
 		return (print_error(), 1);
-	if (!init_stacks(&ps, ps.capacity))
-		return (print_error(), 1);
 	if (is_sorted(&ps))
 		return (free_stacks(&ps), 0);
 	dispatch_sort(&ps);
